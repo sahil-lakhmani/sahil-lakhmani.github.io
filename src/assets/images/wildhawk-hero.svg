@@ -1,0 +1,83 @@
+<svg width="800" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="droneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#skyGradient)"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#grid)" />
+  
+  <!-- Drone Body -->
+  <g transform="translate(400, 150)">
+    <!-- Center body -->
+    <circle cx="0" cy="0" r="25" fill="url(#droneGradient)" stroke="#00d4ff" stroke-width="2"/>
+    
+    <!-- Camera gimbal -->
+    <rect x="-8" y="15" width="16" height="20" fill="#00d4ff" stroke="#00d4ff" stroke-width="1" rx="3"/>
+    <circle cx="0" cy="28" r="4" fill="#1a1a2e" stroke="#00d4ff" stroke-width="1"/>
+    
+    <!-- Arms -->
+    <line x1="0" y1="0" x2="-50" y2="-50" stroke="#00d4ff" stroke-width="3"/>
+    <line x1="0" y1="0" x2="50" y2="-50" stroke="#00d4ff" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-50" y2="50" stroke="#00d4ff" stroke-width="3"/>
+    <line x1="0" y1="0" x2="50" y2="50" stroke="#00d4ff" stroke-width="3"/>
+    
+    <!-- Motors and Propellers -->
+    <g id="motor-tl">
+      <circle cx="-50" cy="-50" r="6" fill="#00d4ff" stroke="#00d4ff" stroke-width="1"/>
+      <circle cx="-50" cy="-50" r="18" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+      <circle cx="-50" cy="-50" r="20" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.2"/>
+    </g>
+    <g id="motor-tr">
+      <circle cx="50" cy="-50" r="6" fill="#00d4ff" stroke="#00d4ff" stroke-width="1"/>
+      <circle cx="50" cy="-50" r="18" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+      <circle cx="50" cy="-50" r="20" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.2"/>
+    </g>
+    <g id="motor-bl">
+      <circle cx="-50" cy="50" r="6" fill="#00d4ff" stroke="#00d4ff" stroke-width="1"/>
+      <circle cx="-50" cy="50" r="18" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+      <circle cx="-50" cy="50" r="20" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.2"/>
+    </g>
+    <g id="motor-br">
+      <circle cx="50" cy="50" r="6" fill="#00d4ff" stroke="#00d4ff" stroke-width="1"/>
+      <circle cx="50" cy="50" r="18" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.4"/>
+      <circle cx="50" cy="50" r="20" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.2"/>
+    </g>
+    
+    <!-- AI Core indicator -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.2" stroke-dasharray="5,5"/>
+  </g>
+  
+  <!-- Status indicators -->
+  <g transform="translate(100, 80)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#00d4ff" font-weight="bold">⚡ Edge AI</text>
+    <circle cx="50" cy="-3" r="4" fill="#00ff00"/>
+  </g>
+  
+  <g transform="translate(600, 80)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="14" fill="#00d4ff" font-weight="bold">GPS Lock ✓</text>
+    <circle cx="80" cy="-3" r="4" fill="#00ff00"/>
+  </g>
+  
+  <!-- Altitude indicator -->
+  <text x="50" y="380" font-family="Arial, sans-serif" font-size="12" fill="#00d4ff" opacity="0.8">Altitude: 15m</text>
+  <text x="50" y="400" font-family="Arial, sans-serif" font-size="12" fill="#00d4ff" opacity="0.8">Battery: 85%</text>
+  
+  <!-- Title -->
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="18" fill="#00d4ff" font-weight="bold" text-anchor="middle">WildHawk - Autonomous Wildlife Surveillance</text>
+</svg>

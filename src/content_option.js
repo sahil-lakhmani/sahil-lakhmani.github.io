@@ -1,3 +1,4 @@
+import myImage from "./assets/images/my_image.jpeg";
 const logotext = "SAHIL";
 const meta = {
     title: "Sahil Lakhmani",
@@ -5,19 +6,20 @@ const meta = {
 };
 
 const introdata = {
-    title: "I'm Sahil Lakhmani------------Note: This Website is still under construction, please comeback tomorrow",
+    title: "I'm Sahil Lakhmani",
     animated: {
-        first: "I build autonomous systems",
-        second: "I work with ROS2 & UAVs",
-        third: "I do robotics research",
+        first: "I learn",
+        second: "I apply",
+        third: "I build",
+        fourth: "......ROBOTS......",
     },
-    description: "4th-year Integrated Dual Degree (B.Tech & M.Tech) at IIT (BHU), Varanasi. Aerial Robotics Head bridging simulation and real-world deployment. Focused on applied research in robotics and automation.",
-    your_img_url: "https://images.unsplash.com/photo-1569025696814-9c4d1b4f4c3a?w=600&h=600&fit=crop",
+    description: "Pre-final year student at IIT (BHU), Varanasi, leading robotics projects and developing autonomous drones for real-world applications. Focused on applied research at the intersection of robotics and artificial intelligence.",
+    your_img_url: myImage,
 };
 
 const dataabout = {
     title: "A bit about myself",
-    aboutme: "I am a 4th-year Engineering student at IIT (BHU), Varanasi, and currently serve as Aerial Robotics Head. I have interned at Sapien Robotics (vision & embedded systems), Infinity Learn (IoT & rapid prototyping), and Sharang Shakti (control systems & sensor fusion). I contribute to open source (ArduPilot, ros-controls) and led the Events Category at Technex'25. My interests lie in robotics, UAVs, computer vision, machine learning, and embedded AI. I am fluent in Hindi and Sindhi, and use English at a professional level.",
+    aboutme: "I’m a 4th-year engineering student at IIT (BHU), Varanasi, curious about how robots can understand and interact with the real world. As Aerial Robotics Head, I work on building autonomous drones and practical robotic systems. I enjoy exploring embedded AI, computer vision, and sensor fusion, and turning research ideas into working prototypes that solve real problems. Outside of academics, I love hiking, photography, and history.",
 };
 
 const worktimeline = [
@@ -50,8 +52,10 @@ const worktimeline = [
 
 const skills = [
     { name: "Python", value: 90 },
+    { name: "C", value: 85 },
     { name: "C++", value: 85 },
     { name: "ROS 2", value: 88 },
+    { name: "Redis", value: 80 },
     { name: "OpenCV", value: 85 },
     { name: "MATLAB / Simulink", value: 80 },
     { name: "Embedded Systems", value: 85 },
@@ -77,24 +81,32 @@ const services = [
 
 const dataportfolio = [
     {
-        img: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&h=300&fit=crop",
-        description: "Mine Mapper — ROS-integrated UAV workflow for autonomous surface mine surveying; SfM orthomosaics with 1–2 cm precision. 90% cost reduction, 75% faster acquisition. IIT (BHU) with Dr. Tarun Verma.",
-        link: "#",
+        title: "Mine Mapper – Low-Cost UAV for 3D Aerial Mapping of Surface Mines",
+        img: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop",
+        summary: "Designed an end-to-end ROS-integrated UAV workflow that automates high-resolution surface mine mapping while cutting costs and risk compared to traditional surveys.",
+        codeLink: "https://github.com/lakhmanisahil",
+        detailLink: "/project/mine-mapper",
     },
     {
-        img: "https://images.unsplash.com/photo-1507582020474-9a35b7d455d9?w=400&h=300&fit=crop",
-        description: "Wildhawk — Autonomous wildlife surveillance drone at InterIIT Tech Meet 13.0. ROS 2, MobileNet V2, Edge AI on Raspberry Pi 4, PX4 Autopilot. IIT Bombay.",
-        link: "#",
+        title: "Wildhawk – Autonomous Wildlife Surveillance Drone",
+        img: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=800&h=600&fit=crop",
+        summary: "Built an autonomous aerial platform to detect and track wildlife in real time, enabling low-cost, non-invasive monitoring for conservation teams.",
+        codeLink: "https://github.com/lakhmanisahil",
+        detailLink: "/project/wildhawk",
     },
     {
-        img: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=400&h=300&fit=crop",
-        description: "MeddyBuddy — Project Lead for autonomous medical UAV. Biomedical sensing, low-latency telemetry (<10 ms), 20+ mission simulations. IIT (BHU) with Dr. Shyam Kamal.",
-        link: "#",
+        title: "MeddyBuddy – Autonomous Medical UAV for Remote Health Monitoring",
+        img: "https://images.unsplash.com/photo-1576091160550-112173fba4b7?w=800&h=600&fit=crop",
+        summary: "Led the development of a medical UAV platform that streams real-time physiological telemetry from remote areas while maintaining reliable autonomous flight.",
+        codeLink: "https://github.com/lakhmanisahil",
+        detailLink: "/project/meddybuddy",
     },
     {
-        img: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
-        description: "Open Source — ArduPilot CustomBuild (Timed-Out build state), Wiki (ViewPro gimbal), gz_ros2_control SDF fixes. Exposure: ArduPilot, ROS 2, Gazebo, ros2_control, CI/CD.",
-        link: "#",
+        title: "Open Source Contributions – ArduPilot & ros-controls",
+        img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
+        summary: "Contributed to widely-used robotics stacks by improving build reliability, documentation accuracy, and simulation tooling for the community.",
+        codeLink: "https://github.com/lakhmanisahil",
+        detailLink: "/project/opensource",
     },
 ];
 

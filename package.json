@@ -2,6 +2,10 @@
     "name": "react-portfolio",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://sahil-lakhmani.github.io",
+    "devDependencies": {
+        "gh-pages": "^6.1.1"
+    },
     "dependencies": {
         "bootstrap": "^5.2.3",
         "emailjs-com": "^3.2.0",
