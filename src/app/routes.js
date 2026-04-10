@@ -9,6 +9,7 @@ import { MineMapperDetail } from "../pages/projects/MineMapperDetail";
 import { WildhawkDetail } from "../pages/projects/WildhawkDetail";
 import { MeddyBuddyDetail } from "../pages/projects/MeddyBuddyDetail";
 import { OpenSourceDetail } from "../pages/projects/OpenSourceDetail";
+import { LineFollowerDetail } from "../pages/projects/LineFollowerDetail";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
@@ -32,6 +33,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/project/wildhawk" element={<WildhawkDetail />} />
         <Route path="/project/meddybuddy" element={<MeddyBuddyDetail />} />
         <Route path="/project/opensource" element={<OpenSourceDetail />} />
+        <Route path="/project/line-follower" element={<LineFollowerDetail />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>
