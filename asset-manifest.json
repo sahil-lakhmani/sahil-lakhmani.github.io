@@ -1,12 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.424b5246.css",
-    "main.js": "/static/js/main.12e58a1d.js",
-    "static/media/my_image.jpeg": "/static/media/my_image.c688ccfb0ecf35be883b.jpeg",
+    "main.js": "/static/js/main.55fb79bf.js",
+    "static/media/mine_mapper.png": "/static/media/mine_mapper.db10a4255927f6fad63f.png",
+    "static/media/wildhawk.png": "/static/media/wildhawk.65c41008a032681ae29f.png",
+    "static/media/meddy_buddy.png": "/static/media/meddy_buddy.dc21b4e4fc6a05f8aabd.png",
+    "static/media/open_source_ros.png": "/static/media/open_source_ros.fcac5ef05bf062a70374.png",
+    "static/media/line_follower.png": "/static/media/line_follower.1b053b83f09a473e3e3e.png",
+    "static/media/1.jpeg": "/static/media/1.1cb437568cf144879b49.jpeg",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.424b5246.css",
-    "static/js/main.12e58a1d.js"
+    "static/js/main.55fb79bf.js"
   ]
 }
